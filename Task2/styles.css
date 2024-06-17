@@ -1,0 +1,56 @@
+body{
+    background-color: #ffffcc;
+    font-family: Arial,  sans-serif;
+    color: #333;
+
+}
+
+.header{
+    background-color: #ff0000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom-color: 12px solid #A52A2A;
+}
+.header h1{
+    margin: 0;
+}
+.content{
+    padding: 10px;
+}
+
+.section {
+  
+   margin-bottom: 5px;
+   padding: 10px;
+}
+.section h2{
+    background-color: #66ff66;
+    margin-top: 0;
+}
+.table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.table,th,td{
+    border: 1px solid #000;
+}
+th,td{
+    padding: 10px;
+    text-align: left;
+}
+form{
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+label,input,textarea,button{
+    display: block;
+    margin: 5px,0;
+}
+form input[type="radio"]{
+    display: inline;
+}
+form label[for="Male"],form label[for="Female"]{
+    display: inline;
+}

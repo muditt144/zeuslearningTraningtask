@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>Quantum Dashboard</title>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <img src="./assets/icons/logo used in header.svg" alt="Logo" />
+      </div>
+      <div class="nav-left-items">
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Content</a></li>
+          <li><a href="#">Users</a></li>
+          <li><a href="#">Reports</a></li>
+          <li><a href="#">Admin</a></li>
+        </ul>
+        <div class="header-icon">
+          <img src="./assets/icons/alerts.svg" alt="Alerts" />
+          <span>2</span>
+        </div>
+        <div class="header-icon">
+          <img src="./assets/icons/announcements.svg" alt="Announcements" />
+          <span>1</span>
+        </div>
+        <div class="header-icon">
+          <img src="./assets/icons/account_circle.svg" alt="Account" />
+          <span style="background-color: white;color: black;">T</span>
+        </div>
+        <div class="hamburger">
+          <img src="./assets/icons/hamburger-menu.svg" alt="Menu" />
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="main-heading">
+        <div class="main-heading-content main-heading-content-active">
+          <img src="./assets/icons/courses.svg" alt="Courses" />
+          <span><b>4</b> Courses</span>
+        </div>
+        <div class="main-heading-content">
+          <img src="./assets/icons/classes.svg" alt="Classes" />
+          <span><b>4</b> Courses</span>
+        </div>
+      </div>
+      <div class="top-header">
+        <div class="top-header-show">
+          <p>showing 4 of 4 courses</p>
+        </div>
+        <div class="top-header-sort">
+          <span>Sort By: </span>
+          <select name="course-name" id="sort-options">
+            <option value="course-name" selected>Course Name</option>
+          </select>
+          <img src="./assets/icons/sort.svg" alt="Sort" />
+        </div>
+      </div>
+      <hr />
+      <div class="cards" id="course-cards"></div>
+      <div class="footer-section">
+        <a href="#" class="footer-upper-section">ABOUT | CONTACT US</a>
+        <footer>
+          <img src="./assets/icons/logo used in footer.svg" alt="Footer Logo">
+          <hr>
+          <p>Copyright &amp; 2020-2021 <span>Zeus Systems Pvt. Ltd.</span> All rights reserved</p>
+        </footer>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

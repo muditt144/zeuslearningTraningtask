@@ -1,0 +1,227 @@
+@font-face {
+    font-family: 'bold';
+    src: url('../assets/Quicksand font 1/static/Quicksand-Bold.ttf');
+  }
+  
+  @font-face {
+    font-family: 'light';
+    src: url('../assets/Quicksand font 1/static/Quicksand-Light.ttf');
+  }
+  
+  @font-face {
+    font-family: 'medium';
+    src: url('../assets/Quicksand font 1/static/Quicksand-Medium.ttf');
+  }
+  
+  @font-face {
+    font-family: 'regular';
+    src: url('../assets/Quicksand font 1/static/Quicksand-Regular.ttf');
+  }
+  
+  @font-face {
+    font-family: 'semibold';
+    src: url('../assets/Quicksand font 1/static/Quicksand-SemiBold.ttf');
+  }
+  
+ @import './universal.scss';
+  
+  body {
+    background-color: #eeeeee;
+  }
+  
+  nav {
+    background: linear-gradient(#232f3cbb, #232f3cc5), url('../assets/header pattern svg.svg');
+    padding: 10px 20px;
+    border-bottom: 5px solid #4fc1e6;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 93vh;
+  }
+  
+  @import './forms.scss';
+  
+  
+  .options {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .options > input {
+    accent-color: #1f7a54;
+    height: 1.5rem;
+  }
+  
+  .options > label {
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+  
+  .select-option {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .select-option > label {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #646464;
+    font-size: small;
+  }
+  
+  .select-option > select {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #929292;
+    font-size: 1rem;
+  }
+  
+  .input > input {
+    margin-top: 30px;
+    border: none;
+    border-bottom: 1px solid #929292;
+    width: 100%;
+    outline: none;
+    padding-bottom: 4px;
+    font-size: medium;
+  }
+  
+  .input > .password > input {
+    margin-top: 30px;
+    border: none;
+    border-bottom: 1px solid #929292;
+    width: 100%;
+    outline: none;
+    padding-bottom: 4px;
+    font-size: medium;
+  }
+  
+  .input > p {
+    text-align: right;
+    font-size: small;
+    color: #1f7a54;
+    cursor: pointer;
+  }
+  
+  .password {
+    position: relative;
+  }
+  
+  .password > span {
+    position: absolute;
+    right: 0;
+    top: 27px;
+    cursor: pointer;
+  }
+  
+  .remember {
+    position: relative;
+    display: flex;
+  }
+  
+  #remember {
+    opacity: 0;
+    margin-right: 5px;
+  }
+  
+  #remember + label::before {
+    content: '';
+    top: 0;
+    left: 0;
+    margin-left: -2px;
+    width: 20px;
+    height: 20px;
+    background-image: url('../assets/icons/checkbox-unchecked.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+  }
+  
+  #remember:checked + label::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url('../assets/icons/checkbox-checked.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+  }
+  
+  button {
+    margin: 20px auto 0 auto;
+    display: flex;
+    align-self: center;
+    padding: 10px 70px;
+    border: none;
+    background-color: #3fd28b;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+  }
+  
+  .footer-section {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-upper-section {
+    color: #1f7a54;
+    font-size: small;
+    margin: 20px 0;
+  }
+  
+  footer {
+    display: flex;
+    background: #e0e1e1;
+    width: 100vw;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer > img {
+    margin-right: 15px;
+  }
+  
+  footer > hr {
+    margin-right: 15px;
+    color: #646464;
+    height: 20px;
+  }
+  
+  footer > p {
+    font-size: small;
+    font-family: 'medium';
+  }
+  
+  footer > p > span {
+    font-family: 'bold';
+    font-weight: bold;
+  }
+  
+  @media (max-width: 1430px) {
+    form {
+      width: 60%;
+    }
+  }
+  
+  @media (max-width: 950px) {
+    form {
+      width: 70%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    form {
+      width: 90%;
+    }
+  }
+  

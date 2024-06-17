@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  gap: 10px;
+  background-color: #eaeae8;
+  padding: 10px;
+}
+
+.grid-container > div {
+ 
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column: 1 / span 3;
+  background-color: #806ade;
+}
+.item2 {
+  grid-row: 2 / span 2;
+  background-color: #2fb5ae;
+}
+.item3 {
+  grid-column: 2 / span 2;
+  background-image: radial-gradient(circle,#645adc,#536ee4, #20adf9);
+}
+.item6 {
+  grid-column: 1 / span 3;
+  background-color: #806ade;
+
+
+}
+.item4{
+    background-image: radial-gradient(circle,#645adc,#536ee4, #20adf9);
+}
+.item5{
+    background-image: radial-gradient(circle,#645adc,#536ee4, #20adf9);
+}
+</style>
+</head>
+<body>
+
+<h1>The grid-column Property</h1>
+
+<p>Use the <em>grid-column</em> property to specify where to place an item.</p>
+<p>Item1 will start on column-line 1 and span 3 columns:</p>
+
+<div class="grid-container">
+  <div class="item1">Header</div>
+  <div class="item2">sidebar</div>
+  <div class="item3">content-1</div>  
+  <div class="item4">content-2</div>
+  <div class="item5">content-3</div>
+  <div class="item6">Footer</div>
+ 
+</div>
+
+</body>
+</html>
+
+
